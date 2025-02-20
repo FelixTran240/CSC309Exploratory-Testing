@@ -1,40 +1,80 @@
 # CSC308-T2-INV
 
-Winter 2025; Nathan Martinez
+CSC 309 Winter 2025; 
 
-- Remade Backend
+# Project Setup
 
-### Setting Up Your `.env` File
+## Prerequisites
 
-This project uses a `.env` file to manage environment variables for local development. To get started, follow these steps:
-If you don't have an `.env` file already, create one in the root directory of the backend:
+Make sure you have the following installed on your machine:
+- Node.js
+- npm (Node Package Manager)
+- Python (for the scraper)
 
-```bash
-touch .env
-```
+## Getting Started
 
-```Example .env
-# Example Server Port
-PORT=3000
+### Backend
 
-# Example PostgreSQL Configuration
-POSTGRES_DB=postgres
-POSTGRES_USER=nate
-POSTGRES_PASSWORD=mysecretpassword
-```
+1. Navigate to the backend directory:
+    ```sh
+    cd backend
+    ```
 
-### Unit Tests with Jasmine & SuperTest
+2. Install the dependencies:
+    ```sh
+    npm install
+    ```
 
-We're using Jasmine and SuperTest for unit testing. So, not conventional for the class but its a preference :D
+3. Start the backend server:
+    ```sh
+    npm run start
+    ```
 
-### Prettier
+### Frontend
 
-This project uses [Prettier](https://prettier.io/) to automatically format code and ensure consistent style across the codebase. The default Prettier settings are applied in the .prettierrc.json.
+1. Navigate to the frontend directory:
+    ```sh
+    cd polyb
+    ```
 
-### ESLint
+2. Install the dependencies:
+    ```sh
+    npm install
+    ```
 
-This project uses [ESLint](https://ESLint.org) for linting. Settings are within eslint.config.mjs.
+3. Start the frontend server:
+    ```sh
+    npm start
+    ```
 
-```
+## Additional Scripts
 
-```
+### Backend
+
+- **Build the project**:
+    ```sh
+    npm run build
+    ```
+
+- **Run tests**:
+    ```sh
+    npm run test
+    ```
+
+- **Lint the code**:
+    ```sh
+    npm run lint
+    ```
+
+### Frontend
+
+- **Build the project for production**:
+    ```sh
+    npm run build
+    ```
+
+- **Run tests**:
+    ```sh
+    npm test
+    ```
+
